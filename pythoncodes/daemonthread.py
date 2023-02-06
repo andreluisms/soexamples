@@ -1,11 +1,11 @@
-import logging
-import threading
-import time
+#Adaptado de realpython.com/intro-to-python-threading/#what-is-a-thread
+
+import logging, threading, time
 
 def thread_function(name):
-    logging.info("iniciando")
+    logging.info("Thread %s: iniciando", name)
     time.sleep(2)
-    logging.info("finalizando")
+    logging.info("Thread %s: finalizando", name)
 
 if __name__ == "__main__":
     format = "[%(asctime)s: %(threadName)s] -  %(message)s: " #Cria formato para log. Formato hora/nome da thread/ mensagem
