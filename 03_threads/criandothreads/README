@@ -1,3 +1,0 @@
-para compilar programas com threads
-
-gcc criandothreads.c -lpthread -o criandotrheads
